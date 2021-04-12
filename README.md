@@ -15,7 +15,7 @@ function showPrag(x,i){
 			storyprag[j].style.display = "none";
 		}
 	}
-	// storyprag.style.display = "none";
-	
 }
 ```
+
+The second version will coming soon!!  
