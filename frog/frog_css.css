@@ -320,11 +320,11 @@ header{
   float: left;
 }
 
-.story-prag{
+.story-prag, .story-prag2{
   display: none;
 }
 
-.story-prag:nth-child(1){
+.story-prag:nth-child(1), .story-prag2:nth-child(1){
   display: inline;
 }
 

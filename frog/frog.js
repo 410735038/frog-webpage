@@ -63,7 +63,7 @@ navSlide();
 
 // --------------story-li-hover----------------
 
-function showPrag(x,i){
+function showPrag_1(x,i){
 	const storyprag  = document.querySelectorAll('.story-prag');
 	console.log(i);
 	for(j = 0; j < storyprag.length; j++){
@@ -74,6 +74,17 @@ function showPrag(x,i){
 			storyprag[j].style.display = "none";
 		}
 	}
-	// storyprag.style.display = "none";
-	
+}
+
+function showPrag_2(x,i){
+	const storyprag  = document.querySelectorAll('.story-prag2');
+	console.log(i);
+	for(j = 0; j < storyprag.length; j++){
+		if(j == i){
+			storyprag[j].style.display = "inline";
+		}
+		else{
+			storyprag[j].style.display = "none";
+		}
+	}
 }
