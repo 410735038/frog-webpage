@@ -18,6 +18,7 @@ function showPrag(x,i){
 }
 ```
 I update the second vertion at 2021/4/19.  
+All of the resource is in the new folder called "frog_0419".  
 This version I researched the responsive imgmap in the HTML and embedded the jquery imgmap in website.  
 The resource is from [here](https://github.com/stowball/jQuery-rwdImageMaps).  
 
