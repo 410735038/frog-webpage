@@ -17,5 +17,6 @@ function showPrag(x,i){
 	}
 }
 ```
-
-The second version will coming soon!!  
+I update the second vertion at 2021/4/19.  
+This version I researched the responsive imgmap in the HTML and embedded the jquery imgmap in our website.  
+The resource is from #here.
