@@ -1,6 +1,7 @@
 # frog-webpage
 The project from USR.  
 I update the first vertion at 2021/4/12.  
+All resorce is in the "frog" folder.  
 Open the frog.html to see the webpage.  
 ```js
 //Here is the animation in the article <p>
