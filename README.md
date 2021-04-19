@@ -18,5 +18,12 @@ function showPrag(x,i){
 }
 ```
 I update the second vertion at 2021/4/19.  
-This version I researched the responsive imgmap in the HTML and embedded the jquery imgmap in our website.  
-The resource is from #here.
+This version I researched the responsive imgmap in the HTML and embedded the jquery imgmap in website.  
+The resource is from [here](https://github.com/stowball/jQuery-rwdImageMaps).  
+
+Learn a lot, Thanks a lot!!  
+
+As you can see, the Homepage.html has a map, use jquery syntax above website I mentioned, we can hover at specific location and go to the next website.  
+The most important thing is that the range of area will not leave the relative position of the origin image, that's amazing!!  
+
+
