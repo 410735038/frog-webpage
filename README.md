@@ -27,6 +27,6 @@ The resource is from [here](https://github.com/stowball/jQuery-rwdImageMaps), an
 Learn a lot, Thanks a lot!!  
 
 As you can see, the Homepage.html has a map, use jquery syntax above website I mentioned, we can hover at specific location and go to the next website.  
-The most important thing is that the range of area will not leave the relative position of the origin image, that's amazing!!  
+The most important thing is that the range of area will not leave the relative position of the origin image when we resize the web, that's amazing!!  
 
 
