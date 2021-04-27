@@ -18,13 +18,20 @@
     <!-- ---------------------header---------------- -->
     <nav>
         <div class="logo">
-            <h4>鳳林社區導覽</h4>
+            <h4><a class="activehome" href="http://localhost:5500/Homepage/Homepage.html">鳳林社區導覽</a></h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">相關網站</a></li>
-            <li><a href="#">聯繫我們</a></li>
-            <li><a href="#">作者介紹</a></li>
+            <li class="smoothnav"><a href="#">首頁</a></li>
+            <li class="nav-hover-btn smoothnav"><p style="cursor: pointer;">相關網站</p>
+                <div class="dropdown-content">
+                    <a href="http://localhost:5500/frog/frog.html">小雨蛙</a>
+                    <a href="#">豐田玉</a>
+                    <a href="#">還有一個</a>
+                </div>
+            </li>
+            <li class="smoothnav"><a href="#">聯繫我們</a></li>
+            <li class="smoothnav"><a href="#">作者介紹</a></li>
+            
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -33,9 +40,17 @@
         </div>
     </nav>
     
+    <!-- ----------------------------welcome slide--------------------------- -->
+
+    <div class="welcome-slide">
+        <h1>歡迎蒞臨鳳林社區</h1>
+        <button class="welcome-button" style="cursor: pointer;">
+            <img src="img/previousbutton.png" alt="" width="100px" height="100px">
+        </button>
+    </div>
 
     <!-- ----------------------------map--------------------------- -->
-    <img usemap="#map" src="img/map_test.jpg" alt="i'am map">
+    <img class="homemap" usemap="#map" src="img/map_test.jpg" alt="i'am map">
     <map name="map">
         <area shape="rect" coords="700,250,750,300" title="hello" href="http://localhost:5500/frog/frog/frog.html" alt="location1">
         <area shape="rect" coords="123,22,456,67" title="location2" href="https://www.google.com/?hl=zh_tw" alt="locatiion2">
