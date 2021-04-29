@@ -18,19 +18,19 @@
     <!-- ---------------------header---------------- -->
     <nav>
         <div class="logo">
-            <h4><a class="activehome" href="http://localhost:5500/Homepage/Homepage.html">鳳林社區導覽</a></h4>
+            <h4><a class="activehome" href="http://localhost:5500/Homepage/Homepage.html">豐山社區導覽</a></h4>
         </div>
         <ul class="nav-links">
-            <li class="smoothnav"><a href="#">首頁</a></li>
-            <li class="nav-hover-btn smoothnav"><p style="cursor: pointer;">相關網站</p>
+            <li><a href="#">首頁</a></li>
+            <li class="nav-hover-btn"><p style="cursor: pointer;">相關網站</p>
                 <div class="dropdown-content">
-                    <a href="http://localhost:5500/frog/frog.html">小雨蛙</a>
-                    <a href="#">豐田玉</a>
-                    <a href="#">還有一個</a>
+                    <a class="nav_a" href="http://localhost:5500/frog/frog.html">小雨蛙</a>
+                    <a class="nav_a" href="#">豐田玉</a>
+                    <a class="nav_a" href="#">還有一個</a>
                 </div>
             </li>
-            <li class="smoothnav"><a href="#">聯繫我們</a></li>
-            <li class="smoothnav"><a href="#">作者介紹</a></li>
+            <li><a href="#">聯繫我們</a></li>
+            <li><a href="#">作者介紹</a></li>
             
         </ul>
         <div class="burger">
@@ -56,9 +56,9 @@
         <area shape="rect" coords="123,22,456,67" title="location2" href="https://www.google.com/?hl=zh_tw" alt="locatiion2">
         <area shape="rect" coords="" href="#" alt="locatiion3">
     </map>
-    <script src="Homepage.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery.rwdImageMaps.min.js"></script>
+    <script src="Homepage.js"></script>
     <script>
         $(document).ready(function(e) {
         	$('img[usemap]').rwdImageMaps();
@@ -68,6 +68,9 @@
         	});
         });
     </script>
+    <div class="hhh">
+        <p>最新消息</p>
+    </div>
 </body>
 
 </html>

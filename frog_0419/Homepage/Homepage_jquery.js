@@ -1,50 +1,46 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
+    
     const nav = document.querySelector('.nav-links');
     const navlinks = document.querySelectorAll('.nav-links li')
 
     burger.addEventListener('click', () => {
-        // nav.classList.toggle('nav-active');
-        //here need to change to jquery too...
         navlinks.forEach((link, index) => {
             link.style.animation = `navLinkFade 0.5s ease forwards ${index/5 + 1}s`;
-                console.log(index);
+                console.log(index);       
         });
-        // burger.classList.toggle('toggle');
     });
 
     $(".burger").click(function(){
         $(".nav-links").toggleClass("nav-active");
         $(this).toggleClass("toggle");
     })
-    
-    // ---------------------nav drop----------------------
+
     const navdrop = document.querySelector('.nav-hover-btn')
     const dropcontent = document.querySelector('.dropdown-content');
 
-
     navdrop.addEventListener('mouseover', () => {
-        dropcontent.style.display = "block";
         dropcontent.style.animation = "navdropFade 1s";
     })
-    nav.addEventListener('mouseout', () => {
-        dropcontent.style.display = "none";
+
+    $(".nav-hover-btn").mouseover(function(){
+        $(".dropdown-content").css("display", "block");
+    })
+    $(".nav-hover-btn").mouseout(function(){
+        $(".dropdown-content").css("display", "none");
     })
 
-    // ------------------------open slide-------------------
-    const welcomebutton = document.querySelector('.welcome-button')
-    const welcomeslide = document.querySelector('.welcome-slide')
-    
-    welcomebutton.addEventListener('click', () =>{
-        welcomeslide.classList.toggle('welcome-active');
+    $(".welcome-button").click(function(){
+        $(".welcome-slide").toggleClass("welcome-active");
         setTimeout(flash,1500);
     })
+
 }
 
 const flash = () => {
-    const welcomeslide = document.querySelector('.welcome-slide')
+    
+    $(".welcome-slide").css("display", "none");
     const homemap = document.querySelector('.homemap')
-    welcomeslide.style.display = "none";
     homemap.style.animation = "homemapFade 2s";
     
 }
