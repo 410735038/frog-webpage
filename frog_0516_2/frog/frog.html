@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frog_css.css">
+    <title>Frog</title>
+    <style>
+        /* img[usemap]{
+            border: none;
+            height: auto;
+            max-width: 100%;
+            width: auto;
+        } */
+    </style>
+</head>
+<body>
+    <!-- ---------------------header---------------- -->
+    <nav>
+        <div class="logo">
+            <h4><a class="activehome" href="http://localhost:5500/frog/frog.html">小蝌蚪的家</a></h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">首頁</a></li>
+            <li class="nav-hover-btn"><p style="cursor: pointer;">相關網站</p>
+                <div class="dropdown-content">
+                    <a class="nav_a" href="http://localhost:5500/frog/frog.html">小雨蛙</a>
+                    <a class="nav_a" href="#">豐田玉</a>
+                    <a class="nav_a" href="#">還有一個</a>
+                </div>
+            </li>
+            <li><a href="#">聯繫我們</a></li>
+            <li><a href="#">作者介紹</a></li>
+            <li><a href="#">登入</a><a href="#" style="border-left:2px solid;">註冊</a></li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>        
+        </div>
+    </nav>
+	<!-- -----------------image slider------------------- -->
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <img src="img/test1.jpg" style="width:100%; height: 200px;">
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="img/product2.png" style="width:100%; height: 200px;">
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="img/product1.png" style="width:100%;height: 200px;">
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div class="dot_container" style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <!-- --------------------------------main content---------------------------- -->
+  
+  <div class="main"> 
+    <div class="main_sidebar">
+        <!-- this sidebar have to RWD! -->
+        <ul class="main_nav_container">
+            <li class="main_nav" onmousedown="s_hide(this,0)" style="cursor: pointer;">認識青蛙與兩棲類</li>
+            <li class="main_nav" onmousedown="s_hide(this,1)" style="cursor: pointer;">蛙類養育</li>
+            <li class="main_nav" onmousedown="s_hide(this,2)" style="cursor: pointer;">書中之蛙</li>
+            <li class="main_nav" onmousedown="s_hide(this,3)" style="cursor: pointer;">青蛙調查家</li>
+            <li class="main_nav" style="cursor: pointer;"><a href="http://localhost:5500/frog/Frog_IB/Frog_IB.html">青蛙圖鑑</a></li>
+        </ul>
+    </div>
+    <div class="main_container">
+      <div class="main_title">
+          <h2>關於青蛙，你不能不知道的事</h2>
+      </div>
+      <div class="story">
+          <div class="s_title">
+              <h3 style="font-size: 21px;">何謂兩棲類</h3>
+              <img src="img/p054_oldword.jpg" alt="">
+          </div>
+          <div class="story_content">
+            青蛙、蟾蜍是大家都很熟悉的兩棲類動物，但兩棲類究竟是什麼？而兩棲類又包括什麼？
+            兩棲綱（Class Amphibia）主要可用尾巴及四肢的有無來分類：青蛙、蟾蜍是屬於無尾巴、有四肢的無尾目（Order Anura），約有三千五百多種；另外，有尾巴又有四肢的蠑螈、山椒魚則是屬於有尾目（Order Caudata），約有三百五十餘種；最後是有尾巴卻無四肢、長的像蚯蚓的無足目（Order Apoda），以蚓螈為代表，僅一百六十多種。
+              <div style="text-align: end;"><a class="readmore_btn" href="#" style="text-decoration: none; list-style: none; font-weight: bolder;">閱讀更多</a></div>
+          </div>
+          <div class="s_title">
+            <h3>兩棲類的過渡性質</h3>
+            <img src="img/p054_oldword.jpg" alt="">
+        </div>
+        <div class="story_content">
+            所有做生意的人都希望可以財源廣進，所以會在自家或店面放置一些招財祈福的吉祥物例如：財神爺、金元寶， 甚至隨著哈日風而擺設招財貓。但是你有沒有注意到還有人會放一種口含錢幣，身旁一堆金銀珠寶的蟾蜍。 這種蟾蜍被視為一種神獸，香港人稱之為催吉蟾蜍。相傳為劉海仙人的座下神獸，能增加民間百姓的財運， 所以牠是一種旺財的神獸。
+            <div style="text-align: end;"><a class="readmore_btn" href="#" style="text-decoration: none; list-style: none; font-weight:bolder;">閱讀更多</a></div>
+        </div>
+      </div>
+      <div class="story s_hide">
+        <div class="s_title">
+            <h3>蛙的攝食與消化</h3>
+            <img src="img/p054_oldword.jpg" alt="">
+        </div>
+        <div class="story_content">
+            所有做生意的人都希望可以財源廣進，所以會在自家或店面放置一些招財祈福的吉祥物例如：財神爺、金元寶， 甚至隨著哈日風而擺設招財貓。但是你有沒有注意到還有人會放一種口含錢幣，身旁一堆金銀珠寶的蟾蜍。 這種蟾蜍被視為一種神獸，香港人稱之為催吉蟾蜍。相傳為劉海仙人的座下神獸，能增加民間百姓的財運， 所以牠是一種旺財的神獸。
+            <div style="text-align: end;"><a class="readmore_btn" href="#" style="text-decoration: none; list-style: none; font-weight: bolder;">閱讀更多</a></div>
+        </div>
+        <div class="s_title">
+            <h3>蛙的攝食與消化</h3>
+            <img src="img/p054_oldword.jpg" alt="">
+        </div>
+        <div class="story_content">
+            所有做生意的人都希望可以財源廣進，所以會在自家或店面放置一些招財祈福的吉祥物例如：財神爺、金元寶， 甚至隨著哈日風而擺設招財貓。但是你有沒有注意到還有人會放一種口含錢幣，身旁一堆金銀珠寶的蟾蜍。 這種蟾蜍被視為一種神獸，香港人稱之為催吉蟾蜍。相傳為劉海仙人的座下神獸，能增加民間百姓的財運， 所以牠是一種旺財的神獸。
+            <div style="text-align: end;"><a class="readmore_btn" href="#" style="text-decoration: none; list-style: none; font-weight: bolder;">閱讀更多</a></div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+  <footer>
+      <div>i am footer, i will coming soon.</div>
+  </footer>
+<script src="frog.js"></script>
+</body>
+
+</html>
