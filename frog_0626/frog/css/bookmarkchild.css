@@ -1,0 +1,14 @@
+.list_content{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.list_content li{
+    margin-bottom: 5px;
+    list-style-type: square;
+}
+
+.list_content li:hover{
+    color: brown;
+}

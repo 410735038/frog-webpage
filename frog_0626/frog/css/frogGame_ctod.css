@@ -1,0 +1,143 @@
+#game_main_container{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.game_main_container{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.game_left{
+    display: none;
+    width: 20%;
+    background-color: chartreuse;
+}
+
+.left_top{
+    height: 70%;
+    background-color: darkblue;
+}
+
+.left_bottom{
+    width: 80%;
+    margin: auto;
+    height: 30%;
+    background-color: darkgreen;
+    align-items: center;
+    text-align: center;
+}
+
+.left_top li{
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.rb_symbol{
+    font-size: 30px;
+    color: white;
+
+}
+
+#rb_symbol_frog{
+    font-size: 60px;
+    color: white;
+}
+
+#game_right{
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.top_img{
+    width: 50%;
+    height: 100%;
+    /* display: none; */
+}
+
+.top_img img{
+    width: 180px;
+}
+
+#QuestCon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cntFull{
+    display: none;
+    width: 50%;
+    font-size: 50px;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* .checkP ,.checkBtn{
+    position: absolute;
+    top: 50%;
+} */
+
+.checkDiv{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.checkBtn{
+    background-color: greenyellow;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    /* width: 50px;
+    height: 30px; */
+    padding: 15px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.AnsBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    bottom:0;
+    width: 50%;   
+    /* height: 100%; */
+    position: relative;
+}
+.QuestBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#gameControl{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}

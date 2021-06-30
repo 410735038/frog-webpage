@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frog.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/frogGame_ctod.css">
+    <link rel="stylesheet" href="css/froggame_ctod/frogGame_ctod_slide.css">
+
+    <script src="https://kit.fontawesome.com/0bc8a6bba1.js" crossorigin="anonymous"></script>
+    
+    <title>Frog</title>
+    <style>
+    </style>
+</head>
+
+<body ng-app="app" ng-controller="appCtrl">
+    <!-- ---------------------header---------------- -->
+    <nav>
+        <div class="logo">
+            <h4><a class="activehome" href="http://localhost:5500/frog/frog.html">小雨蛙</a></h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">首頁</a></li>
+            <li class="nav-hover-btn">
+                <p style="cursor: pointer;">相關網站</p>
+                <div class="dropdown-content">
+                    <a class="nav_a" href="http://localhost:5500/frog/frog.html">小雨蛙</a>
+                    <a class="nav_a" href="#">豐田玉</a>
+                    <a class="nav_a" href="#">還有一個</a>
+                </div>
+            </li>
+            <li><a href="#">聯繫我們</a></li>
+            <li><a href="#">作者介紹</a></li>
+            <li><a href="#">登入</a><a href="#" style="border-left:2px solid;">註冊</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- sidemenu -->
+    <div class="menu">
+        <div class="title">MENU</div>
+        <ul class="nav">
+            <li class="main_nav" style="cursor: pointer; border-bottom: 1px solid black;"><a href="./frog_home.html">最新消息</a>
+            </li>
+            <li class="main_nav" style="cursor: pointer; margin-top: 5px;"><a href="./frog_bookmarks/frog_bookmarks.html">書籤總覽</a></li>
+            <li class="main_nav" style="cursor: pointer; border-top: 1px solid black;"><a
+                    href="./frogGame_ctod.html">青蛙小遊戲</a></li>
+            <li class="main_nav" style="cursor: pointer; border-top: 1px solid black;"><a
+                    href="./Frog_IB/Frog_IB.html">青蛙圖鑑</a></li>
+        </ul>
+    </div>
+
+    <div class="game_main_container">
+        
+        
+    </div>
+
+    <footer>
+        <div>花蓮豐山社區小雨蛙</div>
+    </footer>
+    <script src="frog.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>

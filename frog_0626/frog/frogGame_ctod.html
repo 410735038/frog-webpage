@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frog.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/frogGame_ctod.css">
+    <link rel="stylesheet" href="css/froggame_ctod/frogGame_ctod_slide.css">
+
+    <!-- from other -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <!-- Wijmo -->
+        <link href="http://prerelease.componentone.com/wijmo5/latest/styles/wijmo.min.css" rel="stylesheet" type="text/css" />
+        <script src="http://prerelease.componentone.com/wijmo5/latest/controls/wijmo.min.js" type="text/javascript"></script>
+
+        <!-- Wijmo-Angular interop -->
+        <script src="http://prerelease.componentone.com/wijmo5/latest/interop/angular/wijmo.angular.min.js" type="text/javascript"></script>
+
+        <link href="./css/app.css" rel="stylesheet" />
+        <script src="./js/DragDropTouch.js"></script>
+        <script src="./js/app.js"></script>
+    <!-- from other -->
+    <script src="https://kit.fontawesome.com/0bc8a6bba1.js" crossorigin="anonymous"></script>
+    
+    <title>Frog</title>
+    <style>
+    </style>
+</head>
+
+<body ng-app="app" ng-controller="appCtrl">
+    <!-- ---------------------header---------------- -->
+    <nav>
+        <div class="logo">
+            <h4><a class="activehome" href="http://localhost:5500/frog/frog.html">小雨蛙</a></h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">首頁</a></li>
+            <li class="nav-hover-btn">
+                <p style="cursor: pointer;">相關網站</p>
+                <div class="dropdown-content">
+                    <a class="nav_a" href="http://localhost:5500/frog/frog.html">小雨蛙</a>
+                    <a class="nav_a" href="#">豐田玉</a>
+                    <a class="nav_a" href="#">還有一個</a>
+                </div>
+            </li>
+            <li><a href="#">聯繫我們</a></li>
+            <li><a href="#">作者介紹</a></li>
+            <li><a href="#">登入</a><a href="#" style="border-left:2px solid;">註冊</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- sidemenu -->
+    <div class="menu">
+        <div class="title">MENU</div>
+        <ul class="nav">
+            <li class="main_nav" style="cursor: pointer; border-bottom: 1px solid black;"><a href="./frog_home.html">最新消息</a>
+            </li>
+            <li class="main_nav" style="cursor: pointer; margin-top: 5px;"><a href="./frog_bookmarks/frog_bookmarks.html">書籤總覽</a></li>
+            <li class="main_nav" style="cursor: pointer; border-top: 1px solid black;"><a
+                    href="./frogGame_ctod.html">青蛙小遊戲</a></li>
+            <li class="main_nav" style="cursor: pointer; border-top: 1px solid black;"><a
+                    href="./Frog_IB/Frog_IB.html">青蛙圖鑑</a></li>
+        </ul>
+    </div>
+
+    <!-- --------------------------------main content---------------------------- -->
+
+    <div class="game_main_container">
+        <div id="game_right">
+            <div class="top_img">
+                <div id="columns" class="QuestBox">
+                    <div id="QuestCon">
+                        <div id="QB1" class="column"><header id="QT1"></header><img id="Quest1" class="column" draggable="true"  alt=""></div>
+                        <div id="QB2" class="column"><header id="QT2"></header><img id="Quest2" class="column" draggable="true"  alt=""></div>
+                        <div id="QB3" class="column"><header id="QT3"></header><img id="Quest3" class="column" draggable="true"  alt=""></div>
+                        <div id="QB4" class="column"><header id="QT4"></header><img id="Quest4" class="column" draggable="true"  alt=""></div>
+                        <div id="QB5" class="column"><header id="QT5"></header><img id="Quest5" class="column" draggable="true"  alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cntFull">
+                <div class="checkDiv">
+                    <i class="fas fa-frog" style="color: green;"></i>
+                    <p class="checkP">確定答案了嗎~</p>
+                    <button class="checkBtn" onclick="check()">送出</button>
+                    <button class="checkBtn" onclick="cancel()">取消</button>
+                </div>                
+            </div>
+            <div id="columns" class="AnsBox">
+                <div id="AB1" class="column" draggable="true"><header id="Ans1"></header></div>
+                <div id="AB2" class="column" draggable="true"><header id="Ans2"></header></div>
+                <div id="AB3" class="column" draggable="true"><header id="Ans3"></header></div>
+                <div id="AB4" class="column" draggable="true"><header id="Ans4"></header></div>
+                <div id="AB5" class="column" draggable="true"><header id="Ans5"></header></div>        
+            </div> 
+            <!-- <div id="gameControl" style="height: 30px;" onclick="renew()"><i  class="fas fa-cog rb_symbol"></i></div>                        -->
+            <input id="hamburger" class="hamburger" type="checkbox"/>
+            <label class="hamburger" for="hamburger">
+              <i></i>
+              <text>
+                <close>close</close>
+                <open>menu</open>
+              </text>
+            </label>
+            <section id="drawer-list">
+                  <ul>
+                    <li><a href="#"><i class="fas fa-home rb_symbol"></i>Game Home</a></li>
+                    <li><a href="#"><i class="fas fa-cog rb_symbol"></i>Setting</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle rb_symbol"></i>You must know</a></li>
+                    <li onclick="renew()"><a href="#"><i class="fas fa-redo-alt rb_symbol"></i>Again</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div>花蓮豐山社區小雨蛙</div>
+    </footer>
+    <script src="frog.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>
